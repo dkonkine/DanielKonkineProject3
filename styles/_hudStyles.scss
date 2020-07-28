@@ -1,0 +1,13 @@
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hudPrefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hudMainText {
+    text-align: center;
+}
