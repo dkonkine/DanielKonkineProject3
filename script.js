@@ -58,7 +58,8 @@ startQuiz = () => {
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-        return window.location.assign('index.html');
+        localStorage.setItem('mostRecentScore', score);
+        return window.location.assign('end.html');
     }
     questionCounter++;
     questionCounterText.innerText = `${questionCounter} / ${maxQuestions}`;
